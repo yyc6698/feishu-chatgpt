@@ -1,9 +1,93 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0" version="26.1.0">
   <diagram name="第 1 页" id="Fv55AwEGnDFYdLgFFwWk">
-    <mxGraphModel>
+    <mxGraphModel dx="6388" dy="-1557" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="N3oLxrpa-6t_X_qUbuOM-2" value="SaleChannelCommodity - 销售渠道下商品" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#dae8fc;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="-4690" y="2850" width="350" height="156" as="geometry" />
+        </mxCell>
+        <mxCell id="N3oLxrpa-6t_X_qUbuOM-3" value="+ ......:String - 6个字段" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="N3oLxrpa-6t_X_qUbuOM-2">
+          <mxGeometry y="26" width="350" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="N3oLxrpa-6t_X_qUbuOM-4" value="+ relationId: String - 关系id" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="N3oLxrpa-6t_X_qUbuOM-2">
+          <mxGeometry y="52" width="350" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="N3oLxrpa-6t_X_qUbuOM-5" value="+ commodityId: String - 商品id" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="N3oLxrpa-6t_X_qUbuOM-2">
+          <mxGeometry y="78" width="350" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="N3oLxrpa-6t_X_qUbuOM-6" value="+ channelId: String - 渠道id" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="N3oLxrpa-6t_X_qUbuOM-2">
+          <mxGeometry y="104" width="350" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="N3oLxrpa-6t_X_qUbuOM-7" value="+ status: Integer - 关系状态" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="N3oLxrpa-6t_X_qUbuOM-2">
+          <mxGeometry y="130" width="350" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="N3oLxrpa-6t_X_qUbuOM-8" value="SaleChannel - 销售渠道" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#dae8fc;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="-4250" y="3100" width="580" height="208" as="geometry" />
+        </mxCell>
+        <mxCell id="N3oLxrpa-6t_X_qUbuOM-9" value="+ ......:String - 6个字段" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="N3oLxrpa-6t_X_qUbuOM-8">
+          <mxGeometry y="26" width="580" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="N3oLxrpa-6t_X_qUbuOM-10" value="+ channelId: String - 渠道id" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="N3oLxrpa-6t_X_qUbuOM-8">
+          <mxGeometry y="52" width="580" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="N3oLxrpa-6t_X_qUbuOM-11" value="+ parentId: String - 父渠道id，若为顶级渠道，父id为-1" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="N3oLxrpa-6t_X_qUbuOM-8">
+          <mxGeometry y="78" width="580" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="N3oLxrpa-6t_X_qUbuOM-12" value="+ status: ChannelStatus - 渠道状态" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="N3oLxrpa-6t_X_qUbuOM-8">
+          <mxGeometry y="104" width="580" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="N3oLxrpa-6t_X_qUbuOM-13" value="+ channelCategory: ChannelCategory - 渠道类别" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="N3oLxrpa-6t_X_qUbuOM-8">
+          <mxGeometry y="130" width="580" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="N3oLxrpa-6t_X_qUbuOM-14" value="+ channelType: ChannelType - 渠道类型" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="N3oLxrpa-6t_X_qUbuOM-8">
+          <mxGeometry y="156" width="580" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="N3oLxrpa-6t_X_qUbuOM-15" value="+ channelTypeId: String - 渠道类型id - 若为自营则id为网校id，专题为专题id，分销为分销商id，单位则是单位id" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="N3oLxrpa-6t_X_qUbuOM-8">
+          <mxGeometry y="182" width="580" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="N3oLxrpa-6t_X_qUbuOM-16" value="SaleChannelPricingPolicy - 销售渠道下定价策略" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#dae8fc;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="-4770" y="3308" width="410" height="208" as="geometry" />
+        </mxCell>
+        <mxCell id="N3oLxrpa-6t_X_qUbuOM-17" value="+ ......:String - 6个字段" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="N3oLxrpa-6t_X_qUbuOM-16">
+          <mxGeometry y="26" width="410" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="N3oLxrpa-6t_X_qUbuOM-18" value="+ relationId: String - 关系id" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="N3oLxrpa-6t_X_qUbuOM-16">
+          <mxGeometry y="52" width="410" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="N3oLxrpa-6t_X_qUbuOM-19" value="+ pricingPolicyId: String - 定价策略ID" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="N3oLxrpa-6t_X_qUbuOM-16">
+          <mxGeometry y="78" width="410" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="N3oLxrpa-6t_X_qUbuOM-20" value="+ channelId: String - 渠道id" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="N3oLxrpa-6t_X_qUbuOM-16">
+          <mxGeometry y="104" width="410" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="N3oLxrpa-6t_X_qUbuOM-21" value="+ defaultChannelEnabled: Integer -  是否为开启渠道下默认 0-否 1-时" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="N3oLxrpa-6t_X_qUbuOM-16">
+          <mxGeometry y="130" width="410" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="N3oLxrpa-6t_X_qUbuOM-22" value="+ sort: Integer - 排序字段 " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="N3oLxrpa-6t_X_qUbuOM-16">
+          <mxGeometry y="156" width="410" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="N3oLxrpa-6t_X_qUbuOM-23" value="+ status: Integer - 关系状态" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="N3oLxrpa-6t_X_qUbuOM-16">
+          <mxGeometry y="182" width="410" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="N3oLxrpa-6t_X_qUbuOM-24" value="SaleChannelDiscountPolicy - 销售渠道下优惠策略" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#dae8fc;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="-4770" y="3530" width="350" height="156" as="geometry" />
+        </mxCell>
+        <mxCell id="N3oLxrpa-6t_X_qUbuOM-25" value="+ ......:String - 6个字段" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="N3oLxrpa-6t_X_qUbuOM-24">
+          <mxGeometry y="26" width="350" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="N3oLxrpa-6t_X_qUbuOM-26" value="+ relationId: String - 关系id" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="N3oLxrpa-6t_X_qUbuOM-24">
+          <mxGeometry y="52" width="350" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="N3oLxrpa-6t_X_qUbuOM-27" value="+ discountPolicyId: String - 优惠策略ID" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="N3oLxrpa-6t_X_qUbuOM-24">
+          <mxGeometry y="78" width="350" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="N3oLxrpa-6t_X_qUbuOM-28" value="+ channelId: String - 渠道id" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="N3oLxrpa-6t_X_qUbuOM-24">
+          <mxGeometry y="104" width="350" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="N3oLxrpa-6t_X_qUbuOM-29" value="+ status: Integer - 关系状态" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="N3oLxrpa-6t_X_qUbuOM-24">
+          <mxGeometry y="130" width="350" height="26" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
